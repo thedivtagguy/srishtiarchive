@@ -1,0 +1,23 @@
+<section class="text-gray-700 body-font">
+    <div class="container px-8 py-8 mx-auto lg:px-4">
+        <div class="flex flex-col w-full mb-8 text-left lg:text-center">
+            <h1 class="my-8 font-bold text-black sm:text-5xl">
+                Srishti Assignments &
+                <br class="md:hidden">
+                    Projects Archive.
+                </h1>
+                <p class="mx-auto -mt-4 text-base font-medium leading-relaxed text-gray-700 lg:w-2/3">
+                    A crowdsourced archival repository of projects and assignments done by students of Srishti. Filterable and searchable by tools used, majors, years and units.
+                </p>
+            </div>
+            <div class="flex lg:justify-center">
+                <a href="/submit">
+                    <button class="inline-flex px-16 py-4 font-semibold text-white transition duration-500 ease-in-out transform bg-red-600 rounded-lg hover:bg-red-800 hover:to-black focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+                        Submit Your Project
+                    </button>
+                </a>
+                <div>
+                    {{- partial "searchbar.html" . -}}
+                </div>
+            </div>
+        </section>

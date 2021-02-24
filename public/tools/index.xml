@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Srishti Archive</title>
+    <link>https://srishtiarchive.com/tools/</link>
+    <description>Recent content in Tools on Srishti Archive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Jan 2021 14:09:59 +0530</lastBuildDate><atom:link href="https://srishtiarchive.com/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D Software</title>
+      <link>https://srishtiarchive.com/tools/3d-software/</link>
+      <pubDate>Fri, 08 Jan 2021 14:09:59 +0530</pubDate>
+      
+      <guid>https://srishtiarchive.com/tools/3d-software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blender</title>
+      <link>https://srishtiarchive.com/tools/blender/</link>
+      <pubDate>Fri, 08 Jan 2021 14:09:59 +0530</pubDate>
+      
+      <guid>https://srishtiarchive.com/tools/blender/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maya</title>
+      <link>https://srishtiarchive.com/tools/maya/</link>
+      <pubDate>Fri, 08 Jan 2021 14:09:59 +0530</pubDate>
+      
+      <guid>https://srishtiarchive.com/tools/maya/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://srishtiarchive.com/tools/programming/</link>
+      <pubDate>Fri, 08 Jan 2021 14:09:59 +0530</pubDate>
+      
+      <guid>https://srishtiarchive.com/tools/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://srishtiarchive.com/tools/python/</link>
+      <pubDate>Fri, 08 Jan 2021 14:09:59 +0530</pubDate>
+      
+      <guid>https://srishtiarchive.com/tools/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://srishtiarchive.com/tools/r/</link>
+      <pubDate>Fri, 08 Jan 2021 14:09:59 +0530</pubDate>
+      
+      <guid>https://srishtiarchive.com/tools/r/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

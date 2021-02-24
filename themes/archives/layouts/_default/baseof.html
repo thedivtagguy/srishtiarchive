@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+    {{ partial "head.html" . }}
+    <div class="flex flex-wrap overflow-hidden">
+        <body
+            class="flex flex-col min-h-screen ">
+            <!--Sidebar Div-->
+            <div class="w-full overflow-hidden lg:w-1/6 xl:w-1/6 fixed sm:w-full md:w-full">
+                {{- partial "sidebar.html" . -}}
+
+
+            </div>
+            <!--Main Area-->
+            <div class="lg:pl-64 w-full items-center overflow-hidden">
+                {{ if eq (relURL .URL) ("/" | safeHTML) }}
+                    {{- partial "hero.html" . -}}
+                {{ end }}
+            </div>
+            <div class="my-1 w-full lg:pt-4 items-center lg:pl-64 overflow-hidden">
+
+                <!--Display Hero Only On Homepages-->
+                {{ if eq (relURL .URL) ("/" | safeHTML) }}
+                    <div class="px-16">
+                        {{- partial "listing.html" . -}}
+                    </div>
+
+                {{ end }}
+                {{ block "main" . }}
+                <!-- The part of the page that will to differ between templates -->
+            {{ end }}
+        </body>
+    </div>
+</html></div></main><footer><div class="lg:pl-64 px-12 sm:pl-1">
+{{- partial "footer.html" . -}}</div></footer><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.1"></script></body></html>

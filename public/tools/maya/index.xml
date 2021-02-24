@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maya on Srishti Archive</title>
+    <link>https://srishtiarchive.com/tools/maya/</link>
+    <description>Recent content in Maya on Srishti Archive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Jan 2021 14:09:59 +0530</lastBuildDate><atom:link href="https://srishtiarchive.com/tools/maya/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Yellow Pages</title>
+      <link>https://srishtiarchive.com/submissions/test2/</link>
+      <pubDate>Fri, 08 Jan 2021 14:09:59 +0530</pubDate>
+      
+      <guid>https://srishtiarchive.com/submissions/test2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

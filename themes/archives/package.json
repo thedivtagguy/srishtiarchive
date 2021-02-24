@@ -1,0 +1,21 @@
+{
+    "name": "my-site",
+    "version": "0.0.1",
+    "description": "that is my-site",
+    "repository": "https://github.com/you/my-site",
+    "license": "MIT",
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^2.1.0",
+        "autoprefixer": "^9.7.4",
+        "postcss": "^7.0.27",
+        "postcss-cli": "^7.1.0",
+        "postcss-import": "^12.0.1",
+        "tailwindcss": "^1.2.0"
+    },
+    "browserslist": [
+        "last 1 version",
+        "> 1%",
+        "maintained node versions",
+        "not dead"
+    ]
+}

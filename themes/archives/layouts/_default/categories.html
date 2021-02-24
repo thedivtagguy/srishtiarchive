@@ -1,0 +1,35 @@
+{{ define "main" }}
+    <div class="max-w-xl mt-20 mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <h2 class="max-w-lg mb-6 capitalize text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            Browse projects by categories.
+        </h2>
+
+        <hr>
+        <section>
+            <ul>
+                {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.major }}
+                    <li>
+                        <a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
+                        <ul>
+                            {{ range $key, $value := $taxonomy }}
+                                <li>
+                                    {{ $key }}
+                                </li>
+                                <ul>
+                                    {{ range $value.Pages }}
+                                        <li hugo-nav="{{ .RelPermalink}}">
+                                            <a href="{{ .Permalink}}">
+                                                {{ .LinkTitle }}
+                                            </a>
+                                        </li>
+                                    {{ end }}
+                                </ul>
+                            {{ end }}
+                        </ul>
+                    </li>
+                {{ end }}
+            </ul>
+        </section>
+    </div>
+
+{{ end }}

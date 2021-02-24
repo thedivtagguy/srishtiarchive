@@ -1,0 +1,26 @@
+baseURL = "https://srishtiarchive.com/"
+languageCode = "en-us"
+title = "Srishti Archive"
+theme = "archives"
+
+[build]
+writeStats = true
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[taxonomies]
+major = "major"
+tools = "tools"
+year = "year"
+
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags", "major", "tools", "year", "description", "author"]
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+    {{ partial "head.html" . }}
+    <div class="flex flex-wrap -mx-1 overflow-hidden">
+    <body class="flex flex-col min-h-screen ">
+        <!--Sidebar Div-->
+        <div class="my-1 w-full overflow-hidden lg:w-1/6 xl:w-1/6">
+            {{- partial "sidebar.html" . -}}
+
+
+       </div>
+        <!--Main Area-->
+           <div class="my-1 w-full overflow-hidden lg:w-5/6 xl:w-5/6 bg-gray-200 pt-5 items-center">
+            {{- partial "searchbar.html" . -}}
+            {{- partial "hero.html" . -}}
+
+           </div>
+        </div>
+        </main>
+        <footer>
+            {{- partial "footer.html" . -}}
+        </footer>
+    </body>
+   
+
+</html>

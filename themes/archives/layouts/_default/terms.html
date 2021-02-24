@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="grid grid-flow-row xl:grid-cols-4 sm:grid-cols-1 gap-10 py-10 px-16">
+        {{ range .Pages }}
+        <a href="{{ .RelPermalink }}">
+
+            <div class="flex-g justify-center">
+                    <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                        <div class="bg-cover bg-center h-56 p-4" style="background-image: url(https://ui-avatars.com/api/?name={{ .Title }}&size=512&background=random&length=2)">
+
+                        </div>
+                        <div class="p-4">
+                            <p class="text-3xl text-center text-gray-900 font-bold">{{ .Title }}</p>
+                        </div>
+                       
+                       
+                    </div>
+                </div>
+                </a>
+        {{ end }}
+</div>
+{{ end }}
+
