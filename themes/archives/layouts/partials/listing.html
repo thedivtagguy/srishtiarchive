@@ -1,4 +1,4 @@
-<div class="grid grid-flow-row xl:grid-cols-4 sm:grid-cols-1 gap-5 py-4 mb-8">
+<div class="grid grid-flow-row xl:grid-cols-4 sm:grid-cols-2 gap-5 py-4 mb-8">
     {{ $section := site.GetPage "submissions" }}
     {{ range $section.RegularPages }}
         <a href="{{ .RelPermalink }}">
@@ -13,28 +13,24 @@
                         <p class="text-xl text-gray-900 font-bold">{{ .Title }}</p>
                         <p class="text-gray-700 text-sm pt-2">{{ .Params.Description }}</p>
                     </div>
-                    <div class="flex p-4 border-t border-gray-300 text-gray-700">
+                    <div class="flex p-4 border-t border-gray-300 text-gray-600">
                         <div class="flex-1 inline-flex items-center">
-                            <svg class="h-6 w-6 text-gray-600 fill-current mr-3" viewbox="0 0 20 20">
-                                <path d="M19.629,9.655c-0.021-0.589-0.088-1.165-0.21-1.723h-3.907V7.244h1.378V6.555h-2.756V5.866h2.067V5.177h-0.689V4.488h-1.378V3.799h0.689V3.11h-1.378V2.421h0.689V1.731V1.294C12.88,0.697,11.482,0.353,10,0.353c-5.212,0-9.446,4.135-9.629,9.302H19.629z M6.555,2.421c1.522,0,2.756,1.234,2.756,2.756S8.077,7.933,6.555,7.933S3.799,6.699,3.799,5.177S5.033,2.421,6.555,2.421z"></path>
-                                <path d="M12.067,18.958h-0.689v-0.689h2.067v-0.689h0.689V16.89h2.067v-0.689h0.689v-0.689h-1.378v-0.689h-2.067v-0.689h1.378v-0.689h2.756v-0.689h-1.378v-0.689h3.218c0.122-0.557,0.189-1.134,0.21-1.723H0.371c0.183,5.167,4.418,9.302,9.629,9.302c0.711,0,1.401-0.082,2.067-0.227V18.958z"></path>
-                            </svg>
+                            <svg class="h-5 w-5 mr-3 text-gray-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                                <g><path d="M6 8a3 3 0 1 0 0-6a3 3 0 0 0 0 6zm-5 6s-1 0-1-1s1-4 6-4s6 3 6 4s-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/></g><rect x="0" y="0" width="16" height="16" fill="rgba(0, 0, 0, 0)"/></svg>
                             <p class="text-sm pr-1">
                                 <span class="text-gray-900 font-bold">3rd</span>
                                 Year</p>
                         </div>
                         <div class="flex-1 inline-flex items-center">
-                            <svg class="h-6 w-6 text-gray-600 fill-current mr-3" viewbox="0 0 20 20">
-                                <path d="M19.68,0.345c-0.218-0.232-0.583-0.243-0.814-0.025L8.645,9.932l1.968,0.844l9.066-9.641C19.886,0.915,19.89,0.568,19.68,0.345z"></path>
-                                <polygon points="8.858,13.626 10.845,11.639 7.368,10.149 6.374,11.142 6.126,10.894 5.629,11.391 5.877,11.639 4.883,12.632 7.368,15.117 8.361,14.123 8.609,14.371 9.106,13.874"></polygon>
-                                <rect x="2.545" y="12.657" transform="matrix(0.7072 0.7071 -0.7071 0.7072 11.5364 2.3789)" width="0.703" height="4.918"></rect>
-                                <rect x="3.539" y="13.651" transform="matrix(0.7071 0.7072 -0.7072 0.7071 12.5319 1.9686)" width="0.703" height="4.918"></rect>
-                                <rect x="4.532" y="14.645" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -3.7574 32.6509)" width="0.703" height="4.918"></rect>
-                                <rect x="0.001" y="18.243" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -10.748 32.7361)" width="2.81" height="0.703"></rect>
-                            </svg>
+                            <svg class="h-5 w-5 mr-2 text-gray-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path stroke-width="1" d="M29.415 21.666l-6.335-6.335l6.334-6.334a2 2 0 0 0 .001-2.829l-.001-.002l-3.58-3.58a2 2 0 0 0-2.829-.001l-.001.001L16.67 8.92l-6.335-6.335a2.004 2.004 0 0 0-2.828 0L2.585 7.506a2.001 2.001 0 0 0 0 2.829l6.334 6.334L2 23.59V30h6.41l6.92-6.92l6.335 6.337a2.008 2.008 0 0 0 2.83 0l4.92-4.922a2.001 2.001 0 0 0 0-2.829zm-5.002-17.67l3.59 3.59l-6.333 6.334l-3.59-3.59zM8 28H4v-3.591l6.33-6.329l3.676 3.678zm15.08.004L4 8.92L8.922 4l3.788 3.787l-2.252 2.253l1.415 1.414l2.251-2.252l4.13 4.13L16 15.582l1.416 1.414l2.252-2.252l4.13 4.13l-2.252 2.251l1.414 1.415l2.252-2.251l2.79 2.791z"/><rect stroke-width="1" x="0" y="0" width="32" height="32" fill="rgba(0, 0, 0, 0)"/></svg>
                             <p class="text-sm">
-                                <span class="text-gray-900 font-bold"></span>
-                                Programming</p>
+                                <span class="text-gray-900 font-bold">
+                                    {{ with .Params.tools }}
+                                        {{ $firstTab := index . 0 }}
+                                        {{ $firstTab }}
+                                    {{ end }}
+                                </span>
+                            </p>
                         </div>
                     </div>
                     <div class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100">

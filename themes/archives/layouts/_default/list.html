@@ -1,15 +1,18 @@
 {{ define "main" }}
     <div class="mx-12 my-4 px-12 py-8 rounded-lg shadow-md" style="background-color:#03223d;">
         <div class="">
-            <a href="#" class="text-3xl text-white font-bold">Submissions Tagged
-                {{ .Page.Title }}</a>
+            {{ if eq .URL "/year/" }}
+            <a href="#" class="text-3xl text-white font-bold">Submissions Tagged in {{ .Page.Title }} year</a>
+            {{ end }}
+            {{ if eq .URL "/major/" }}
+            <a href="#" class="text-3xl text-white font-bold">Submissions Tagged in {{ .Page.Title }}</a>
+            {{ end }}
         </div>
     </div>
     <div class="grid grid-flow-row xl:grid-cols-3 sm:grid-cols-1 gap-10 p-12 -mt-8">
         {{ range .Pages }}
             <a href="{{ .RelPermalink }}">
-                <div
-                    id="hits"><!-- Hits widget will appear here -->
+                <div id="hits"><!-- Hits widget will appear here -->
                 </div>
                 <div class="flex justify-center">
                     <div class="bg-white shadow-xl rounded-lg overflow-hidden">
@@ -29,7 +32,8 @@
                                 </svg>
                                 <p>
                                     <span class="text-gray-900 font-bold">3rd</span>
-                                    Year</p>
+                                    Year
+                                </p>
                             </div>
                             <div class="flex-1 inline-flex items-center">
                                 <svg class="h-6 w-6 text-gray-600 fill-current mr-3" viewbox="0 0 20 20">
@@ -42,16 +46,15 @@
                                 </svg>
                                 <p>
                                     <span class="text-gray-900 font-bold"></span>
-                                    Programming</p>
+                                    Programming
+                                </p>
                             </div>
                         </div>
                         <div class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100">
                             <div class="text-xs uppercase font-bold text-gray-600 tracking-wide">Made By</div>
                             <div class="flex items-center pt-2">
-
                                 <div>
                                     <p class="font-bold text-gray-900">{{ .Params.Author }}</p>
-
                                 </div>
                             </div>
                         </div>
@@ -60,5 +63,4 @@
             </a>
         {{ end }}
     </div>
-
 {{ end }}
