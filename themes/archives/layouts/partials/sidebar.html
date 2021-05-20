@@ -15,14 +15,13 @@
             </a>
             <a class="block px-4 py-2 mt-2 text-sm font-semibold text-white bg-indigo-900 rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">View All Projects</a>
             <a class="block px-4 py-2 mt-2 text-sm font-semibold text-white bg-indigo-900 rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">Categories</a>
-
             <div class="max-w-sm mx-auto w-full px-4 py-3 dark:bg-gray-800 rounded-md p-10">
                 <div class="flex justify-between items-center"></div>
                 {{ if eq (relURL .URL) ("/" | safeHTML) }}
                     <hr class="border-indigo-900 text-center text-2xl p-1 mt-3" data-hr-content="Title" style="--bg:white; --p:0 10px; --trans-x:-50%; --trans-y:-50%;"/>
                     <div class="lg:pt-4">
                         <label class="text-white" for="year">
-                            Filter by Year
+                            Filter by Year  
                             <select id="year" class="text-gray-900 block w-52 mt-3 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500" name="year">
                                 <option value="">
                                     Select Year
